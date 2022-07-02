@@ -26,7 +26,7 @@ public class authenticationPage extends PageBase{
 	
 	public void createAnAccount() throws Exception {
 		Thread.sleep(2000);
-		EmailTextBox.sendKeys("fff600245980b@catdogmail.live");
+		EmailTextBox.sendKeys("m600245980b@catdogmail.live");
 		CreateButton.click();
 		Thread.sleep(2000);
 		
@@ -34,7 +34,7 @@ public class authenticationPage extends PageBase{
 	
 	public void NewUserSignIN() {
 		
-		email.sendKeys("fff600245980b@catdogmail.live");
+		email.sendKeys("m600245980b@catdogmail.live");
 		password.sendKeys("12345");
 		signIn.click();
 	

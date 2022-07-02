@@ -2,12 +2,12 @@ package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class TestBase {
 	public static WebDriver driver;
-	@BeforeSuite
+	@BeforeClass
 	public void Openchrome() throws Exception {
 		
 		String path = System.getProperty("user.dir");
@@ -19,7 +19,8 @@ public class TestBase {
 		driver.manage().window().maximize();
 	}
 	
-	@AfterSuite
+	
+	@AfterClass
 	public void Closechrome() throws Exception{
 		Thread.sleep(5000);
 		driver.close();
